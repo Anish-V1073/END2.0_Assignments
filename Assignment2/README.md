@@ -1,9 +1,15 @@
 ## Scope
 
-Please find the answers for the first assignment questions in the below sections.
+Finding back propagation for the below neural network with the example.
 
-### What is a neural network neuron?
-  Neuron is a mathematical operation takes the input and multiply by it's weight and passes the sum to another neuron via activation function.
+<img width="542" alt="Screenshot 2021-05-11 163547" src="https://user-images.githubusercontent.com/62289867/117949475-c8491680-b32f-11eb-8b20-ffa4640bf32b.png">
+
+### Worksheet of the above neural network
+
+[Assignment2.xlsx](https://github.com/Anish-V1073/END2.0_Assignments/files/6464976/Assignment2.xlsx)
+
+
+
 
 ### What is the use of the learning rate?
 The learning rate is a configurable hyperparameter used in the training of neural networks that has a small positive value.
@@ -26,3 +32,4 @@ We can initialize the weights for neural network with differnt techinques such a
    
   <img align="center" src="https://render.githubusercontent.com/render/math?math=\frac{\partial _{Output}}{\partial _{w^i}} = \frac{\partial _{Contribution^i}}{\partial _{w^i}}    \times \frac{\partial _{Output}}{\partial _{Contribution^i}} ">
    
+<img width="542" alt="Screenshot 2021-05-11 163547" src="https://user-images.githubusercontent.com/62289867/117949415-bb2c2780-b32f-11eb-9acc-ddd3d908c035.png">
