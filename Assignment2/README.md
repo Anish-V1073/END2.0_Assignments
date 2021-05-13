@@ -35,16 +35,12 @@ The error contribution to the total error w.r.t weight **w5** will computed as b
     ∂E_tot/∂w5  = (a_o1 - t1) * a_o1 * (1-a_o1) * a_h1
             
 
-The error contribution to the total error w.r.t weight **w6** will computed as above. Hence the final equation will be as below:
+Similarly, error contribution to the total error w.r.t weight **w6,w7,w8**, will be as below:
 
     ∂E_tot/∂w6  = (a_o1-t1)*a_o1*(1-a_o1)*a_h2
-
-The error contribution to the total error w.r.t weight **w7** will computed as above. Hence the final equation will be as below:
-
+    
     ∂E_tot/∂w7 = (a_o2-t2)*a_o2*(1-a_o2)*a_h1
-
-The error contribution to the total error w.r.t weight **w8** will computed as above. Hence the final equation will be as below:
-
+    
     ∂E_tot/∂w8 = (a_o2-t2)*a_o2*(1-a_o2)*a_h2
 
 The error contribution to the total error w.r.t weight **w1** will computed as above. Hence the final equation will be as below:
@@ -61,16 +57,12 @@ The error contribution to the total error w.r.t weight **w1** will computed as a
                   = ∂E_tot/∂a_h1 * a_h1*(1-a_h1)*i1
     ∂E_tot/∂w1    = ((a_o1-t1)*a_o1*(1-a_o1)*w5 + (a_o2-t2)*a_o2*(1-a_o2)*w7)*a_h1*(1-a_h1)*i1   
     
-The error contribution to the total error w.r.t weight **w2** will computed as above. Hence the final equation will be as below:
+Similarly, error contribution to the total error w.r.t weight **w2,w3,w4** will be as below:
 
     ∂E_tot/∂w2    = ((a_o1-t1)*a_o1*(1-a_o1)*w5 + (a_o2-t2) * a_h1*(1-a_h1)*i2
     
-The error contribution to the total error w.r.t weight **w3** will computed as above. Hence the final equation will be as below:   
+    ∂E_tot/∂w3 = ((a_o1-t1)*a_o1*(1-a_o1)*w6 + (a_o2-t2)*a_o2*(1-a_o2)*w8) * a_h2*(1-a_h2)*i1    
 
-    ∂E_tot/∂w3 = ((a_o1-t1)*a_o1*(1-a_o1)*w6 + (a_o2-t2)*a_o2*(1-a_o2)*w8) * a_h2*(1-a_h2)*i1
-    
-The error contribution to the total error w.r.t weight **w3** will computed as above. Hence the final equation will be as below: 
-    
     ∂E_tot/∂w4 = ((a_o1-t1)*a_o1*(1-a_o1)*w6 + (a_o2-t2)*a_o2*(1-a_o2)*w8) * a_h2*(1-a_h2)*i2
     
 Formula to update the new weights:
