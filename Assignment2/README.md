@@ -1,8 +1,9 @@
 ## Scope
 
 Finding back propagation for the below neural network.
-
+<p align="center">
 <img width="542" alt="Screenshot 2021-05-11 163547" src="https://user-images.githubusercontent.com/62289867/117949475-c8491680-b32f-11eb-8b20-ffa4640bf32b.png">
+</p>
 
 ### Worksheet of the above neural network
 
