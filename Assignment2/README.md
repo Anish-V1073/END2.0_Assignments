@@ -2,8 +2,9 @@
 
 Finding back propagation for the below neural network.
 <p align="center">
-<img width="542" alt="Screenshot 2021-05-11 163547" src="https://user-images.githubusercontent.com/62289867/117949475-c8491680-b32f-11eb-8b20-ffa4640bf32b.png">
+<img width="486" alt="Network Image" src="https://user-images.githubusercontent.com/62289867/118082366-afe20600-b3da-11eb-931b-90d5094277b3.png">
 </p>
+
 
 ### Worksheet of the above neural network
 
@@ -11,8 +12,9 @@ Finding back propagation for the below neural network.
 
 
 ### Screenshot of calculation table with learning rate 0.5
+<p align="center">
 <img width="926" alt="Screenshot 2021-05-11 194744" src="https://user-images.githubusercontent.com/62289867/117950354-b87e0200-b330-11eb-9f3c-1902fc6e8389.png">
-
+</p>
 
 ### Error graph with different learning rates
 |     |     |
