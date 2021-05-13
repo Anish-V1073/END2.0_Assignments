@@ -31,42 +31,54 @@ The error contribution to the total error w.r.t weight **w5** will computed as b
 
     ∂E_tot/∂w5  = ∂(E1+E2)/∂w5 
                 = ∂(E1)/∂w5  ( E2 is eliminated because there is no contribution to E2 by w5)
-                = ∂(E1)/∂w5 * ∂a_o1/∂o1*∂o/∂w5
-                = ∂(1/2*(t1-a_o1)^2)/∂d_o1* σ(o1)/∂o1 * a_h1
-                = 1/2 *(2 * (t1-a_o1) *∂(t1-a_o1)/∂a_o1 * a_o1* (1-a_o1) * a_h1
+                = ∂(E1)/∂w5 * ∂a_o1/∂o1 * ∂o/∂w5
+                = ∂(1/2*(t1-a_o1)^2)/∂d_o1 * ∂σ(o1)/∂o1 * a_h1
+                
+The derivative of σ(x) = x * (1-x), so σ(o1) w.r.t o1 equals a_o1 * (1-a_o1)
+
+                = 1/2 *(2*(t1-a_o1)*∂(t1-a_o1)/∂a_o1 * (a_o1 * (1-a_o1)) * a_h1
                 = (t1 - a_o1)(0-1) * a_o1 * (1-a_o1) * a_h1
     ∂E_tot/∂w5  = (a_o1 - t1) * a_o1 * (1-a_o1) * a_h1
             
 
 Similarly, error contribution to the total error w.r.t weight **w6,w7,w8**, will be as below:
 
-    ∂E_tot/∂w6  = (a_o1-t1)*a_o1*(1-a_o1)*a_h2
+    ∂E_tot/∂w6 = (a_o1-t1) * (a_o1*(1-a_o1)) * a_h2
     
-    ∂E_tot/∂w7 = (a_o2-t2)*a_o2*(1-a_o2)*a_h1
+    ∂E_tot/∂w7 = (a_o2-t2) * (a_o2*(1-a_o2)) * a_h1
     
-    ∂E_tot/∂w8 = (a_o2-t2)*a_o2*(1-a_o2)*a_h2
+    ∂E_tot/∂w8 = (a_o2-t2) * (a_o2*(1-a_o2)) * a_h2
+    
 
-The error contribution to the total error w.r.t weight **w1** will computed as above. Hence the final equation will be as below:
+The error contribution to the total error w.r.t weight **w1** will computed as below:<br>
+The Total error contributed by **w1** is the sum of the error contributed from **[w1 -> E1]** and **[w1 -> E2]**(Refer the path highlighted in orange colour)
+<p align="center">
+<img width="559" alt="Network Image 1" src="https://user-images.githubusercontent.com/62289867/118122149-103f6a80-b410-11eb-997c-a6bc8a38e857.png">
+</p>
 
-    ∂E_tot/dw1    = ∂E_tot/∂a_o1*∂a_o1/∂o1*∂o1/∂a_h1*∂a_h1/∂h1*∂h1/∂w1 = ∂E_tot/∂a_h1*∂a_h1/∂h1*∂h1/∂w1
+    ∂E_tot/dw1    = ∂E_tot/∂a_o1 * ∂a_o1/∂o1 * ∂o1/∂a_h1 * ∂a_h1/∂h1 * ∂h1/∂w1 = ∂E_tot/∂a_h1 * ∂a_h1/∂h1 * ∂h1/∂w1
     ∂E_tot/∂a_h1  = ∂(E1+E2)/∂a_h1
-    ∂E1/∂a_h1     = ∂E1/∂a_o1*∂a_o1/∂o1*∂o1/∂a_h1
-                  = (a_o1-t1)*a_o1*(1-a_o1)*w5
-    ∂E2/∂a_h1     = (a_o2-t2)*a_o2*(1-a_o2)*w7
-    ∂E_tot/∂a_h1  = (a_o1-t1)*a_o1*(1-a_o1)*w5 + (a_o2-t2)*a_o2*(1-a_o2)*w7
-    ∂E_tot/∂a_h2  = (a_o1-t1)*a_o1*(1-a_o1)*w6 + (a_o2-t2)*a_o2*(1-a_o2)*w8
-    ∂E_tot/∂w1    = ∂E_tot/∂a_o1*∂a_o1/∂o1*∂o1/∂a_h1*∂a_h1/∂h1*∂h1/∂w1 
-                  = ∂E_tot/∂a_h1*∂a_h1/∂h1*∂h1/∂w1
-                  = ∂E_tot/∂a_h1 * a_h1*(1-a_h1)*i1
-    ∂E_tot/∂w1    = ((a_o1-t1)*a_o1*(1-a_o1)*w5 + (a_o2-t2)*a_o2*(1-a_o2)*w7)*a_h1*(1-a_h1)*i1   
+    ∂E1/∂a_h1     = ∂E1/∂a_o1 * ∂a_o1/∂o1 * ∂o1/∂a_h1
+                  = (a_o1-t1) * a_o1*(1-a_o1) * w5
+    ∂E2/∂a_h1     = (a_o2-t2) * a_o2*(1-a_o2) * w7
+    ∂E_tot/∂a_h1  = (a_o1-t1) * a_o1*(1-a_o1) *w5 + (a_o2-t2) * a_o2*(1-a_o2) * w7
+    ∂E_tot/∂a_h2  = (a_o1-t1) * a_o1*(1-a_o1) *w6 + (a_o2-t2) *a_o2 *(1-a_o2) * w8
+    
+    ∂E_tot/∂w1    = ∂E_tot/∂a_o1 * ∂a_o1/∂o1 * ∂o1/∂a_h1 * ∂a_h1/∂h1 * ∂h1/∂w1
+    
+Since we already calculated the error from **[a_h1->o1->a_h1]** and **[a_h1->o2->a_h2]** (i.e ∂E_tot/∂a_h1)  we can rewrite the above equation as,
+
+                  = ∂E_tot/∂a_h1 *∂a_h1/∂h1 * ∂h1/∂w1
+                  = ∂E_tot/∂a_h1 * a_h1*(1-a_h1) * i1
+    ∂E_tot/∂w1    = ((a_o1-t1) * a_o1*(1-a_o1) * w5 + (a_o2-t2) * a_o2*(1-a_o2) * w7)* a_h1*(1-a_h1) * i1   
     
 Similarly, error contribution to the total error w.r.t weight **w2,w3,w4** will be as below:
 
-    ∂E_tot/∂w2    = ((a_o1-t1)*a_o1*(1-a_o1)*w5 + (a_o2-t2) * a_h1*(1-a_h1)*i2
+    ∂E_tot/∂w2 = ((a_o1-t1) * a_o1*(1-a_o1) * w5 + (a_o2-t2) * a_o2*(1-a_o2) * w7) * a_h1*(1-a_h1) * i2
     
-    ∂E_tot/∂w3 = ((a_o1-t1)*a_o1*(1-a_o1)*w6 + (a_o2-t2)*a_o2*(1-a_o2)*w8) * a_h2*(1-a_h2)*i1    
+    ∂E_tot/∂w3 = ((a_o1-t1) * a_o1*(1-a_o1) * w6 + (a_o2-t2) * a_o2*(1-a_o2) * w8) * a_h2*(1-a_h2) * i1    
 
-    ∂E_tot/∂w4 = ((a_o1-t1)*a_o1*(1-a_o1)*w6 + (a_o2-t2)*a_o2*(1-a_o2)*w8) * a_h2*(1-a_h2)*i2
+    ∂E_tot/∂w4 = ((a_o1-t1) * a_o1*(1-a_o1) * w6 + (a_o2-t2) * a_o2*(1-a_o2) * w8) * a_h2*(1-a_h2) * i2
     
 Formula to update the new weights:
 
