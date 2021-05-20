@@ -231,6 +231,47 @@ By creating a custom class for dataset we can combine MNIST dataset, the random 
           "\nImage Accuracy: ",ImageAccuracy,"Sum Accuracy: ", SumAccuracy
       )
       
+#### Training Log
+    Epoch:  0 
+    Batch Size:  1000 
+    Predicted image Count:  51143 Predicted sum Count:  34105 
+    Total loss: 175.52697610855103 
+    Image Accuracy:  85.23833333333334 Sum Accuracy:  56.84166666666667
+
+
+    Epoch:  1 
+    Batch Size:  1000 
+    Predicted image Count:  52748 Predicted sum Count:  35091 
+    Total loss: 168.68412017822266 
+    Image Accuracy:  87.91333333333333 Sum Accuracy:  58.485
+
+
+    Epoch:  2 
+    Batch Size:  1000 
+    Predicted image Count:  52704 Predicted sum Count:  35053 
+    Total loss: 168.77437615394592 
+    Image Accuracy:  87.83999999999999 Sum Accuracy:  58.421666666666674
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+    
+    Epoch:  198 
+    Batch Size:  1000 
+    Predicted image Count:  53857 Predicted sum Count:  43414 
+    Total loss: 157.95900893211365 
+    Image Accuracy:  89.76166666666666 Sum Accuracy:  72.35666666666667
+
+
+    Epoch:  199 
+    Batch Size:  1000 
+    Predicted image Count:  53606 Predicted sum Count:  43251 
+    Total loss: 158.76781558990479 
+    Image Accuracy:  89.34333333333333 Sum Accuracy:  72.085
+      
 ### Loss Function
   Since we need two output from the network(Image prediction and Sum) we have choosen "cross_entropy" loss function. It default loss function for multi-class problems.
   
