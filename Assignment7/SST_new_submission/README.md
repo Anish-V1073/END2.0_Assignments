@@ -129,3 +129,9 @@ So if we want to get the sentiment values of a sentence we need to look into the
     Actual Value: Very Negative
     Predicted Value: Very Negative
     
+
+ #### Team Members
+   1. Anish V
+   2. Vimal Kaur
+   3. Hari
+   4. Nilanjana Dev Nath
