@@ -21,18 +21,18 @@ For building the model, we will be using GloVe (Global Vectors for Word Represen
 In our model, we are using GloVe embeddings of 50 dimensions and adding 'SOS' and 'EOS' token to the start of the word embeddings. Once the word embeddings are ready and the data has been normalized, we build the weight matrix which is added to the embedding layer of the encoder. This weight matrix is built based on pre-trained weights of the glove vectors.
 
 ## Training Logs
-   1m 55s (- 26m 58s) (5000 6%) 3.9277
-   3m 48s (- 24m 45s) (10000 13%) 3.4028
-   5m 42s (- 22m 49s) (15000 20%) 3.2060
-   7m 35s (- 20m 53s) (20000 26%) 3.0135
-   9m 29s (- 18m 59s) (25000 33%) 2.8964
-   11m 23s (- 17m 5s) (30000 40%) 2.8528
-   13m 18s (- 15m 12s) (35000 46%) 2.7711
-   15m 12s (- 13m 18s) (40000 53%) 2.7209
-   17m 6s (- 11m 24s) (45000 60%) 2.6759
-   19m 1s (- 9m 30s) (50000 66%) 2.6174
-   20m 55s (- 7m 36s) (55000 73%) 2.5449
-   22m 49s (- 5m 42s) (60000 80%) 2.5144
-   24m 42s (- 3m 48s) (65000 86%) 2.4566
-   26m 37s (- 1m 54s) (70000 93%) 2.4286
-   28m 30s (- 0m 0s) (75000 100%) 2.3680
+      1m 55s (- 26m 58s) (5000 6%) 3.9277
+      3m 48s (- 24m 45s) (10000 13%) 3.4028
+      5m 42s (- 22m 49s) (15000 20%) 3.2060
+      7m 35s (- 20m 53s) (20000 26%) 3.0135
+      9m 29s (- 18m 59s) (25000 33%) 2.8964
+      11m 23s (- 17m 5s) (30000 40%) 2.8528
+      13m 18s (- 15m 12s) (35000 46%) 2.7711
+      15m 12s (- 13m 18s) (40000 53%) 2.7209
+      17m 6s (- 11m 24s) (45000 60%) 2.6759
+      19m 1s (- 9m 30s) (50000 66%) 2.6174
+      20m 55s (- 7m 36s) (55000 73%) 2.5449
+      22m 49s (- 5m 42s) (60000 80%) 2.5144
+      24m 42s (- 3m 48s) (65000 86%) 2.4566
+      26m 37s (- 1m 54s) (70000 93%) 2.4286
+      28m 30s (- 0m 0s) (75000 100%) 2.3680
