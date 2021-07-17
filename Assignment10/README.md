@@ -61,3 +61,18 @@ In our model, we are using GloVe embeddings of 50 dimensions and adding 'SOS' an
 #### With Attentions     
       input = she is older than me .
       output = elle est plus grand que lui . <EOS>
+<p align="center">
+  <img alt="image" src="https://user-images.githubusercontent.com/62289867/126042844-b18d3ac3-7adf-4be8-b5b4-d21c830d4086.png">
+</p>
+
+      input = i am not scared of dying .
+      output = je ne ai pas peur de . <EOS>
+<p align="center">
+  <img alt="image" src="https://user-images.githubusercontent.com/62289867/126042864-19a27c94-5a38-42e1-9d85-8efcb783110f.png">
+</p>
+
+      input = he is a talented young director .
+      output = c est un homme tres . . <EOS>
+<p align="center">
+  <img alt="image" src="https://user-images.githubusercontent.com/62289867/126042891-9f0e0b9f-620b-41e8-99a0-9efbe5f135df.png">
+</p>
