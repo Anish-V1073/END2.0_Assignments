@@ -57,3 +57,7 @@ In our model, we are using GloVe embeddings of 50 dimensions and adding 'SOS' an
       > they re still not safe .
       = ils ne sont toujours pas en securite .
       < ils ne sont pas encore . . <EOS>
+      
+#### With Attentions     
+      input = she is older than me .
+      output = elle est plus grand que lui . <EOS>
