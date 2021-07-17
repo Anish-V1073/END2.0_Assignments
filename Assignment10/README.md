@@ -36,3 +36,24 @@ In our model, we are using GloVe embeddings of 50 dimensions and adding 'SOS' an
       24m 42s (- 3m 48s) (65000 86%) 2.4566
       26m 37s (- 1m 54s) (70000 93%) 2.4286
       28m 30s (- 0m 0s) (75000 100%) 2.3680
+  
+ ### Sample Outcomes
+      > i m employed by a french lawyer .
+      = je suis employe par un avocat francais .
+      < je suis un homme pour l un . <EOS>
+
+      > i m pleased to see you .
+      = je suis ravi de vous voir .
+      < je suis heureux de vous voir . <EOS>
+
+      > i m painting an easter egg .
+      = je decore un uf de paques .
+      < je suis un a un . <EOS>
+
+      > you re such a cute boy .
+      = tu es un garcon tellement mignon !
+      < vous etes une qui un fort . <EOS>
+
+      > they re still not safe .
+      = ils ne sont toujours pas en securite .
+      < ils ne sont pas encore . . <EOS>
