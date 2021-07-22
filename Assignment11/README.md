@@ -12,7 +12,7 @@
   * Copy-paste (don't redirect to github), the Decoder Feed Forward steps for 2 words - 250 pts
  
  
-### Solution
+## Solution
 
  Select a random pair of senetences from the data we prepared
  
@@ -65,7 +65,7 @@ Then we can get the encoder outputs for each of the word in the Sentence
       output, (encoder_hidden,encoder_ct) = lstm(embedded_input, (encoder_hidden,encoder_ct))
       encoder_outputs[i] += output[0,0]
 
-### Encoder Steps
+## Encoder Steps
 
     Input Sentence: vous etes plus intelligent que moi .
     Target Sentence: you re smarter than me .
@@ -126,7 +126,7 @@ Then we can get the encoder outputs for each of the word in the Sentence
 ![23](https://user-images.githubusercontent.com/62289867/126676345-73a30374-fc6e-40ea-98bb-f34a72390791.png)
 
 
-#### We completed the Encoder part now, Now we can start building the Attention Decoder
+## We completed the Encoder part now, Now we can start building the Attention Decoder
 * First input to the decoder will be SOS_token, later inputs would be the words it predicted (unless we implement teacher forcing).
 * Decoder/LSTM's hidden state will be initialized with the encoder's last hidden state.
 * We will use LSTM's hidden state and last prediction to generate attention weight using a FC layer.
