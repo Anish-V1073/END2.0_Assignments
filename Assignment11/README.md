@@ -80,14 +80,13 @@ Then we can get the encoder outputs for each of the word in the Sentence
     Step 0
     Word => vous
     Input Tensor => tensor(118, device='cuda:0')
-
 ![08](https://user-images.githubusercontent.com/62289867/126675318-bb8af8a2-722c-4c8a-8ab2-f0428851b07d.png)
 ![09](https://user-images.githubusercontent.com/62289867/126673907-04ca02fd-9073-410f-b042-332462e37e1a.png)
 
      Step 1
      Word => etes
      Input Tensor => tensor(214, device='cuda:0')
-![10](https://user-images.githubusercontent.com/62289867/126675476-1b2ccb9f-6666-422c-b598-85dfa4a79c35.png
+![10](https://user-images.githubusercontent.com/62289867/126675476-1b2ccb9f-6666-422c-b598-85dfa4a79c35.png)
 ![11](https://user-images.githubusercontent.com/62289867/126675505-5b473655-a1ae-47f9-bf0b-d04b2e8b4335.png)
 
     Step 2
