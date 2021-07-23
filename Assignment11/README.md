@@ -140,6 +140,8 @@ Then we can get the encoder outputs for each of the word in the Sentence
       (decoder_hidden,decoder_ct) = (encoder_hidden,encoder_ct)
       decoded_words = []
       
+ The inputs to LSTM are last prediction or a word from the target sentence based on teacher forcing ratio and decoder hidden states.<br> 
+      
  We need to concatenate the embeddings and the last decoder hidden state
  
      torch.cat((embedded[0], decoder_hidden[0]), 1).shape
@@ -155,7 +157,8 @@ Now we will calaculate the attentions. We will calculating the attentions by con
     =>tensor([[-0.8181,  0.0128,  0.0196, -0.3952, -0.1043, -0.1855, -0.5074, -0.4552,
          -0.5731,  0.5895]], device='cuda:0', grad_fn=<AddmmBackward>)
          
-### Decoder steps
+Now We got the attention weights, now we'll apply the attention on the encoder outputs and combine the applied attentions and embeddings, pass through the relu, this will be input for the LSTM layer. On the output of the LSTM we'll the softmax and predict the expected word.
+### Decoder steps with Full teacher forcing
 
     Step 0
     Expected output(word) => you 
