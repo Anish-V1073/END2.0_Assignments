@@ -82,3 +82,6 @@ Your assignment is to remove all the legacy stuff from this and submit:
     src = ['Leute', ',', 'die', 'vor', 'einem', 'Gebäude', 'stehen', '.', '\n']
     trg = ['People', 'standing', 'outside', 'of', 'a', 'building', '.', '\n']
     predicted trg = ['People', 'standing', 'in', 'front', 'of', 'a', 'building', 'standing', 'in', 'front', 'of', 'a', 'yellow', 'building', '.', '<eos>']
+    
+    
+
