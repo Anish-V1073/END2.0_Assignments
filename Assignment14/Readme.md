@@ -9,9 +9,14 @@
     * Submit README link for Task 2 (training log snippets and 5 sample results) - 250
     * Submit README link for Task 3 (training log snippets and 5 sample results along with BART description must be available) - 1000
 
-<a id="#task1"></a>
-# Task 1
+## Solutions
 
+   * [Task 1](#task1)
+   * Task 2
+   * Task 3
+
+<a id="task1"></a>
+# Task 1
 ### Training logs
       Epoch:   0%|          | 0/1 [00:00<?, ?it/s]
 
