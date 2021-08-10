@@ -17,6 +17,19 @@
 
 <a id="task1"></a>
 # Task 1
+
+### BERT
+BERT stands for Bidirectional Encoder Representations from Transformers. It is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of NLP tasks.
+
+BERT makes use of Transformer architecture (attention mechanism) that learns contextual relations between words in a text. In its vanilla form, Transformer includes two separate mechanisms - an encoder that reads the text input and a decoder that produces a prediction for the task.
+
+BERT is released in two sizes BERTBASE and BERTLARGE. The BASE model is used to measure the performance of the architecture comparable to another architecture and the LARGE model produces state-of-the-art results that were reported in the research paper.
+
+BERT is basically an Encoder stack of transformer architecture. A transformer architecture is an encoder-decoder network that uses self-attention on the encoder side and attention on the decoder side. BERTBASE has 12 layers in the Encoder stack while BERTLARGE has 24 layers in the Encoder stack. These are more than the Transformer architecture described in the original paper (6 encoder layers). BERT architectures (BASE and LARGE) also have larger feedforward-networks (768 and 1024 hidden units respectively), and more attention heads (12 and 16 respectively) than the Transformer architecture suggested in the original paper. It contains 512 hidden units and 8 attention heads. BERTBASE contains 110M parameters while BERTLARGE has 340M parameters.
+
+We have used the Squad Dataset to try a training of Bert model in this task and we successfuly trained the model and got the following results.
+
+
 ### Training logs
       Epoch:   0%|          | 0/1 [00:00<?, ?it/s]
 
@@ -285,4 +298,69 @@
       
  ### Sample outcomes:
  
+    Question: Who did Rollo sign the treaty of Saint-Clair-sur-Epte with?
+    Expected Ans: King Charles III
+    Predicted Ans: King Charles III of West Francia
+
+    Question: What is the original meaning of the word Norman?
+    Expected Ans: Norseman, Viking or  Viking
+    Predicted Ans: French normand
+
+    Question: Who ruined Roussel de Bailleul's plans for an independent state?
+    Expected Ans: Alexius Komnenos
+    Predicted Ans: the Byzantine general Alexius Komnenos
+
+    Question: What was the name of the count of Apulia 
+    Expected Ans: Robert Guiscard
+    Predicted Ans: Robert Guiscard
+
+    Question: Who did Emma Marry?
+    Expected Ans: King Ethelred II
+    Predicted Ans: Duke Richard II of Normandy
+ 
+ 
+ ### Results:
+ 
+    [
+     {
+       "exact": 51.697127937336816
+     },
+     {
+       "f1": 55.72823471563484
+     },
+     {
+       "total": 11873
+     },
+     {
+       "HasAns_exact": 64.4399460188934
+     },
+     {
+       "HasAns_f1": 72.51371976699234
+     },
+     {
+       "HasAns_total": 5928
+     },
+     {
+       "NoAns_exact": 38.99074852817494
+     },
+     {
+       "NoAns_f1": 38.99074852817494
+     },
+     {
+       "NoAns_total": 5945
+     },
+     {
+       "best_exact": 56.04312305230354
+     },
+     {
+       "best_exact_thresh": -5.20816445350647
+     },
+     {
+       "best_f1": 58.489528046044356
+     },
+     {
+       "best_f1_thresh": -5.112893342971802
+     }
+   ]
+
  
