@@ -12,7 +12,7 @@
 ## Solutions
 
    * [Task 1](#task1)
-   * Task 2
+   * [Task 2](#task2)
    * Task 3
 
 <a id="task1"></a>
@@ -361,6 +361,80 @@ We have used the Squad Dataset to try a training of Bert model in this task and 
      {
        "best_f1_thresh": -5.112893342971802
      }
-   ]
+      ]
 
+
+<a id="task2"></a>
+ # Task 2
  
+ ### Training Logs:
+       ======== Epoch 1 / 4 ========
+      Training...
+        Batch    40  of    241.    Elapsed: 0:00:28.
+        Batch    80  of    241.    Elapsed: 0:00:56.
+        Batch   120  of    241.    Elapsed: 0:01:24.
+        Batch   160  of    241.    Elapsed: 0:01:51.
+        Batch   200  of    241.    Elapsed: 0:02:19.
+        Batch   240  of    241.    Elapsed: 0:02:47.
+
+        Average training loss: 0.50
+        Training epcoh took: 0:02:47
+
+      Running Validation...
+        Accuracy: 0.82
+        Validation Loss: 0.44
+        Validation took: 0:00:06
+
+      ======== Epoch 2 / 4 ========
+      Training...
+        Batch    40  of    241.    Elapsed: 0:00:28.
+        Batch    80  of    241.    Elapsed: 0:00:55.
+        Batch   120  of    241.    Elapsed: 0:01:23.
+        Batch   160  of    241.    Elapsed: 0:01:51.
+        Batch   200  of    241.    Elapsed: 0:02:19.
+        Batch   240  of    241.    Elapsed: 0:02:46.
+
+        Average training loss: 0.31
+        Training epcoh took: 0:02:47
+
+      Running Validation...
+        Accuracy: 0.85
+        Validation Loss: 0.42
+        Validation took: 0:00:06
+
+      ======== Epoch 3 / 4 ========
+      Training...
+        Batch    40  of    241.    Elapsed: 0:00:28.
+        Batch    80  of    241.    Elapsed: 0:00:55.
+        Batch   120  of    241.    Elapsed: 0:01:23.
+        Batch   160  of    241.    Elapsed: 0:01:51.
+        Batch   200  of    241.    Elapsed: 0:02:19.
+        Batch   240  of    241.    Elapsed: 0:02:47.
+
+        Average training loss: 0.20
+        Training epcoh took: 0:02:47
+
+      Running Validation...
+        Accuracy: 0.84
+        Validation Loss: 0.45
+        Validation took: 0:00:06
+
+      ======== Epoch 4 / 4 ========
+      Training...
+        Batch    40  of    241.    Elapsed: 0:00:28.
+        Batch    80  of    241.    Elapsed: 0:00:56.
+        Batch   120  of    241.    Elapsed: 0:01:23.
+        Batch   160  of    241.    Elapsed: 0:01:51.
+        Batch   200  of    241.    Elapsed: 0:02:19.
+        Batch   240  of    241.    Elapsed: 0:02:47.
+
+        Average training loss: 0.14
+        Training epcoh took: 0:02:47
+
+      Running Validation...
+        Accuracy: 0.84
+        Validation Loss: 0.55
+        Validation took: 0:00:06
+
+      Training complete!
+      Total training took 0:11:33 (h:mm:ss)
