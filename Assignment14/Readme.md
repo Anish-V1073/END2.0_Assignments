@@ -13,7 +13,7 @@
 
    * [Task 1](#task1)
    * [Task 2](#task2)
-   * Task 3
+   * [Task 3](#task3)
 
 <a id="task1"></a>
 # Task 1
@@ -463,3 +463,66 @@ We have used the Squad Dataset to try a training of Bert model in this task and 
     Expected label: Acceptable
     Predicted label: Acceptable
 
+<a id="task3"></a>
+# Task 3
+
+### Training logs:
+      INFO:filelock:Lock 139867515147216 acquired on /root/.cache/huggingface/transformers/3f12fb71b844fcb7d591fdd4e55027da90d7b5dd6aa5430ad00ec6d76585f26c.58d5dda9f4e9f44e980adb867b66d9e0cbe3e0c05360cefe3cd86f5db4fff042.lock
+      Downloading: 100%
+      1.60k/1.60k [00:00<00:00, 44.4kB/s]
+      INFO:filelock:Lock 139867515147216 released on /root/.cache/huggingface/transformers/3f12fb71b844fcb7d591fdd4e55027da90d7b5dd6aa5430ad00ec6d76585f26c.58d5dda9f4e9f44e980adb867b66d9e0cbe3e0c05360cefe3cd86f5db4fff042.lock
+      INFO:filelock:Lock 139867492824912 acquired on /root/.cache/huggingface/transformers/d065edfe6954baf0b989a2063b26eb07e8c4d0b19354b5c74af9a51f5518df6e.6ca4df1a6ec59aa763989ceec10dff41dde19f0f0824b9f5d3fcd35a8abffdb2.lock
+      Downloading: 100%
+      1.02G/1.02G [00:20<00:00, 46.8MB/s]
+      INFO:filelock:Lock 139867492824912 released on /root/.cache/huggingface/transformers/d065edfe6954baf0b989a2063b26eb07e8c4d0b19354b5c74af9a51f5518df6e.6ca4df1a6ec59aa763989ceec10dff41dde19f0f0824b9f5d3fcd35a8abffdb2.lock
+      INFO:filelock:Lock 139867501983888 acquired on /root/.cache/huggingface/transformers/0d6fc8b2ef1860c1f8f0baff4b021e3426cc7d11b153f98e563b799603ee2f25.647b4548b6d9ea817e82e7a9231a320231a1c9ea24053cc9e758f3fe68216f05.lock
+      Downloading: 100%
+      899k/899k [00:00<00:00, 1.62MB/s]
+      INFO:filelock:Lock 139867501983888 released on /root/.cache/huggingface/transformers/0d6fc8b2ef1860c1f8f0baff4b021e3426cc7d11b153f98e563b799603ee2f25.647b4548b6d9ea817e82e7a9231a320231a1c9ea24053cc9e758f3fe68216f05.lock
+      INFO:filelock:Lock 139867501983888 acquired on /root/.cache/huggingface/transformers/6e75e35f0bdd15870c98387e13b93a8e100237eb33ad99c36277a0562bd6d850.5d12962c5ee615a4c803841266e9c3be9a691a924f72d395d3a6c6c81157788b.lock
+      Downloading: 100%
+      456k/456k [00:00<00:00, 1.68MB/s]
+      INFO:filelock:Lock 139867501983888 released on /root/.cache/huggingface/transformers/6e75e35f0bdd15870c98387e13b93a8e100237eb33ad99c36277a0562bd6d850.5d12962c5ee615a4c803841266e9c3be9a691a924f72d395d3a6c6c81157788b.lock
+      INFO:filelock:Lock 139867500691664 acquired on /root/.cache/huggingface/transformers/d94f53c8851dcda40774f97280e634b94b721a58e71bcc152b5f51d0d49a046a.fc9576039592f026ad76a1c231b89aee8668488c671dfbe6616bab2ed298d730.lock
+      Downloading: 100%
+      1.36M/1.36M [00:00<00:00, 4.84MB/s]
+      INFO:filelock:Lock 139867500691664 released on /root/.cache/huggingface/transformers/d94f53c8851dcda40774f97280e634b94b721a58e71bcc152b5f51d0d49a046a.fc9576039592f026ad76a1c231b89aee8668488c671dfbe6616bab2ed298d730.lock
+      INFO:filelock:Lock 139867500691664 acquired on /root/.cache/huggingface/transformers/1abf196c889c24daca2909359ca2090e5fcbfa21a9ea36d763f70adbafb500d7.67d01b18f2079bd75eac0b2f2e7235768c7f26bd728e7a855a1c5acae01a91a8.lock
+      Downloading: 100%
+      26.0/26.0 [00:00<00:00, 655B/s]
+      INFO:filelock:Lock 139867500691664 released on /root/.cache/huggingface/transformers/1abf196c889c24daca2909359ca2090e5fcbfa21a9ea36d763f70adbafb500d7.67d01b18f2079bd75eac0b2f2e7235768c7f26bd728e7a855a1c5acae01a91a8.lock
+      INFO:simpletransformers.seq2seq.seq2seq_utils: Creating features from dataset file at cache_dir/
+      100%
+      5000/5000 [00:02<00:00, 2752.58it/s]
+      INFO:simpletransformers.seq2seq.seq2seq_model: Training started
+      Epoch 1 of 1: 100%
+      1/1 [13:32<00:00, 812.69s/it]
+      wandb: You can find your API key in your browser here: https://wandb.ai/authorize
+      wandb: Paste an API key from your profile and hit enter: ··········
+      huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+      To disable this warning, you can either:
+         - Avoid using `tokenizers` before the fork if possible
+         - Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+      huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+      To disable this warning, you can either:
+         - Avoid using `tokenizers` before the fork if possible
+         - Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+      2021-08-11 09:33:20.833793: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+      wandb: W&B syncing is set to `offline` in this directory.  Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+      Epochs 0/1. Running Loss: 0.5364: 100%
+      625/625 [09:41<00:00, 1.07it/s]
+      INFO:simpletransformers.seq2seq.seq2seq_model:Saving model into outputs/checkpoint-625-epoch-1
+      INFO:simpletransformers.seq2seq.seq2seq_utils: Creating features from dataset file at cache_dir/
+      huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+      To disable this warning, you can either:
+         - Avoid using `tokenizers` before the fork if possible
+         - Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+      100%
+      500/500 [00:01<00:00, 1.21s/it]
+      INFO:simpletransformers.seq2seq.seq2seq_model:{'eval_loss': 0.5591612346470356}
+      INFO:simpletransformers.seq2seq.seq2seq_model:Saving model into outputs/best_model
+      INFO:simpletransformers.seq2seq.seq2seq_model:Saving model into outputs/
+      INFO:simpletransformers.seq2seq.seq2seq_model: Training of facebook/bart-large model complete. Saved to outputs/.
+      
+ ### Sample outcomes:
+ 
