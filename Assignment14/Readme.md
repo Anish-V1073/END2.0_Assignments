@@ -438,3 +438,28 @@ We have used the Squad Dataset to try a training of Bert model in this task and 
 
       Training complete!
       Total training took 0:11:33 (h:mm:ss)
+      
+ ### Sample predictions
+ 
+ Acceptable = '1', Unacceptable = '0'
+ 
+    Sentence: That professor is feared by all students.
+    Expected label: Acceptable
+    Predicted label: Acceptable
+
+    Sentence: Mary was given by John the book.
+    Expected label: Unacceptable
+    Predicted label: Unacceptable
+
+    Sentence: Books were taken from each student and given to Mary by the other.
+    Expected label: Unacceptable
+    Predicted label: Unacceptable
+
+    Sentence: Max seemed to be trying to begin to love Harriet, and Fred to be trying to begin to love Sue.
+    Expected label: Unacceptable
+    Predicted label: Acceptable
+
+    Sentence: Whenever Russia has made a major political blunder, the U.S. has too.
+    Expected label: Acceptable
+    Predicted label: Acceptable
+
