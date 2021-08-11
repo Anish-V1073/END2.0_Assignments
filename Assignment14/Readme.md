@@ -547,3 +547,61 @@ The corruption schemes used in the paper are summarized below:
       
  ### Sample outcomes:
  
+      ---------------------------------------------------------
+      Enter text to paraphrase: They were there to enjoy us and they were there to pray for us 
+      Generating outputs: 100%
+      1/1 [00:00<00:00, 2.28it/s]
+      ---------------------------------------------------------
+      They were there to enjoy us and they were there to pray for us
+      Predictions >>>
+      They were there to enjoy us and they were there for us to pray.
+      They were there to enjoy us and they were there for us to pray.
+      They were there to enjoy us and they were there for us to pray.
+      
+      ---------------------------------------------------------
+      Enter text to paraphrase: He played with the A-level Kane County Cougars in 1993 and the AA Portland Sea Dogs .
+      Generating outputs: 100%
+      1/1 [00:00<00:00, 1.75it/s]
+      ---------------------------------------------------------
+      He played with the A-level Kane County Cougars in 1993 and the AA Portland Sea Dogs .
+      Predictions >>>
+      He played with the A-level Kane County Cougars in 1993 and the AA Portland Sea Dogs in 1993.
+      He played with the A-level Kane County Cougars in 1993 and the AA Portland Sea Dogs in 1993.
+      He played with the A-level Kane County Cougars in 1993 and the AA Portland Sea Dogs in 1993.
+      
+      ---------------------------------------------------------
+      Enter text to paraphrase: She was only a few months in French service when she met some British frigates in 1809 .
+      Generating outputs: 100%
+      1/1 [00:00<00:00, 1.94it/s]
+      ---------------------------------------------------------
+      She was only a few months in French service when she met some British frigates in 1809 .
+      Predictions >>>
+      She was only a few months in French service when she met some British frigates in 1809.
+      She was only a few months in French service when she met some British frigates in 1809.
+      She was only a few months in French service when she met some British frigates in 1809.      
+            
+      ---------------------------------------------------------
+      Enter text to paraphrase: Kathy and her husband Pete Beale ( Peter Dean ) are stable financially .
+      Generating outputs: 100%
+      1/1 [00:00<00:00, 2.23it/s]
+      ---------------------------------------------------------
+      Kathy and her husband Pete Beale ( Peter Dean ) are stable financially .
+
+      Predictions >>>
+      Kathy and her husband Pete Beale ( Peter Dean ) are financially stable.
+      Kathy and her husband Pete Beale ( Peter Dean ) are financially stable.
+      Kathy and her husband Pete Beale ( Peter Dean ) are financially stable.
+      
+      ---------------------------------------------------------
+      Enter text to paraphrase: The Tabaci River is a tributary of the River Leurda in Romania .
+      Generating outputs: 100%
+      1/1 [00:00<00:00, 1.97it/s]
+      ---------------------------------------------------------
+      The Tabaci River is a tributary of the River Leurda in Romania .
+
+      Predictions >>>
+      The Tabaci River is a tributary of the Leurda River in Romania.
+      The Tabaci River is a tributary of the Leurda River in Romania.
+      The Tabaci River is a tributary of the Leurda River in Romania.
+      ---------------------------------------------------------
+
