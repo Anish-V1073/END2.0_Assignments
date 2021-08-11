@@ -466,6 +466,27 @@ We have used the Squad Dataset to try a training of Bert model in this task and 
 <a id="task3"></a>
 # Task 3
 
+### BART
+
+BART is a denoising autoencoder for pretraining sequence-to-sequence models. BART is trained by 
+*  Corrupting text with an arbitrary noising function
+*  Learning a model to reconstruct the original text.
+
+BART uses a standard Transformer architecture (Encoder-Decoder) like the original Transformer model used for neural machine translation but also incorporates some changes from BERT (only uses the encoder) and GPT (only uses the decoder).
+
+BART has both an encoder (like BERT) and a decoder (like GPT), essentially getting the best of both worlds.
+The encoder uses a denoising objective similar to BERT while the decoder attempts to reproduce the original sequence (autoencoder), token by token, using the previous (uncorrupted) tokens and the output from the encoder.
+
+A significant advantage of this setup is the unlimited flexibility of choosing the corruption scheme; including changing the length of the original input. Or, in fancier terms, the text can be corrupted with an arbitrary noising function.
+
+The corruption schemes used in the paper are summarized below:
+
+* Token masking - a random subset of the input is replaced with [MASK] token, like in BERT
+* Token deletion - Random tokens are deleted from the input. The model must decide which positions are missing (as the tokens are simply deleted and not replaced with anything else)
+* Text infilling - A number of text spans (length can vary) are each replaced with a single [MASK] token. 
+* Sentence Permutation - the input is split based on periods (.) and the sentences are shuffled. 
+* Document Rotation - a token is chosen at random, and the sequence is rotated so that it starts with the chosen token. 
+
 ### Training logs:
       INFO:filelock:Lock 139867515147216 acquired on /root/.cache/huggingface/transformers/3f12fb71b844fcb7d591fdd4e55027da90d7b5dd6aa5430ad00ec6d76585f26c.58d5dda9f4e9f44e980adb867b66d9e0cbe3e0c05360cefe3cd86f5db4fff042.lock
       Downloading: 100%
