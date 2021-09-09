@@ -35,6 +35,20 @@ To Achieve this task we need three main components:
 * A pre-trained generator model like BERT
 * A pre-trained retriever model like DPR
 * An Indexed KB of text Documents(Answer documents, JSON file)
-      
+     
+     
+We taken the acrhitecture for this model from [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)
+
+### Architecture
+
+![Retrieval Architecture](https://user-images.githubusercontent.com/62289867/132666358-43fdaf49-634b-4463-b07a-c646be4cbc66.png)
+
+We are not completely implementing the RAG model here, instead of that we are writing a simpler version of RAG. RAG models combine parametric and non-parametric memory and work well for knowledge-intensive tasks. A parametric model can predict future values using only the parameters. While nonparametric machine learning algorithms are often slower and require large amounts of data, they are rather flexible as they minimize the assumptions they make about the data.
+
+We are using a BERT like encoder model to generate our Encoded document **d(z)** vector(Not trained) and another BERT like model to genearte Question Vector **q(x)** and BART is used as the generator model. This takes as input the documents (passed on from retriever) concatenated together, pre-pended with the query, generates the answer token by token, minimizing the log-likelihood of p(y|x,z). 
+
+![1_jWecxbzBsJEbNgiy_LOIvw-1](https://user-images.githubusercontent.com/62289867/132668794-93a052f5-8753-4ba5-bfa0-68efd0c43896.png)
+
+Here we are taking a pre-trained Seq2Seq (BART) model and it will be trained as a denoising auto-encoder
 
 
