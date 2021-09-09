@@ -11,6 +11,7 @@ The Goal of this CAPSTONE Project is to build a closed domain(only Pytorch relat
             "Y":Answer
             "Z":Answer document
       }
+      
 Below are some of the sample examples in a dataset:
 
       {
