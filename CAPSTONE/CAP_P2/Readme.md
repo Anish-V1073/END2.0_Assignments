@@ -47,8 +47,13 @@ We are not completely implementing the RAG model here, instead of that we are wr
 
 We are using a BERT like encoder model to generate our Encoded document **d(z)** vector(Not trained) and another BERT like model to genearte Question Vector **q(x)** and BART is used as the generator model. This takes as input the documents (passed on from retriever) concatenated together, pre-pended with the query, generates the answer token by token, minimizing the log-likelihood of p(y|x,z). 
 
+
+Once we trained the bi-encoders on our dataset(all of our answer documents) and stores an index of the document vectors and on the inferencing mode, we need to implement FAISS to send the top k documents to the next step i.e Generator - BART
+
 ![1_jWecxbzBsJEbNgiy_LOIvw-1](https://user-images.githubusercontent.com/62289867/132668794-93a052f5-8753-4ba5-bfa0-68efd0c43896.png)
 
-Here we are taking a pre-trained Seq2Seq (BART) model and it will be trained as a denoising auto-encoder
+Here we are taking a pre-trained Seq2Seq (BART) model and it will be trained as a denoising auto-encoder. We are concatinating the top k documents retrived from FAISS and concatinating the raw text of each document, pre-pended by the Question query.
+
+Then we will be training a decoder model to predict the exact sentence or Similar sentence.
 
 
